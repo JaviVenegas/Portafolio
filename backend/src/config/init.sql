@@ -1,3 +1,4 @@
+-- Active: 1729978767201@@127.0.0.1@5432@proyectosportafolio
 
 
 CREATE DATABASE proyectosportafolio;
@@ -18,3 +19,8 @@ CREATE TABLE images (
     CONSTRAINT fk_images FOREIGN KEY (id_proyecto) 
         REFERENCES proyectos (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+
+SELECT * FROM proyectos;
+
+SELECT * FROM images;
