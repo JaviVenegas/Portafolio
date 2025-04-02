@@ -11,6 +11,14 @@ import { FaGithub } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5"; 
 import { CiLocationOn } from "react-icons/ci";
 import profileImg from '/images/profile-img.png'; // Ruta relativa si está dentro de src
+import htmlImg from '/images/html.png';
+import cssImg from '/images/css.png';
+import jsImg from '/images/JavaScript.png';
+import reactImg from '/images/react.png';
+import bootstrapImg from '/images/bootstrap.png';
+import nodeImg from '/images/Node.png';
+import postgresImg from '/images/PostgreSQL.png';
+
 
 
 import proyectos from "../components/Proyectos";
@@ -68,7 +76,7 @@ export const Home = () => {
     <Container id="hero" className="d-flex flex-column justify-content-center">
         <div className="container" data-aos="zoom-in" data-aos-delay="100"> 
             <h1>JAVIERA VENEGAS CASTILLO</h1>
-            <p style={{fontSize:"30px"}}>Soy <span className="typed" data-typed-items="Desarrollador full-stack Js, Arquitecta"></span></p>
+            <p style={{fontSize:"30px"}}> I am <span className="typed" data-typed-items="Full Stack Developer, Architect, Proyect Manager"></span></p>
             <div className="social-links">
                 <a href="https://github.com/JaviVenegas" className="gitHub"><FaGithub style={{fontSize:"45px"}} /></a>
                 <a href="https://www.linkedin.com/in/javiera-venegas-castillo-37084612a/" className="linkedin"><FaLinkedinIn style={{fontSize:"45px"}} /></a>
@@ -98,15 +106,26 @@ export const Home = () => {
                         <img src= {profileImg} style={{width:"100%", height:"100%"}}  className="img-fluid" alt=""/> 
                     </div>
                     <div>
-                        <h3>Desarrollador full-stack.</h3>
-                        <p className="fst-italic"> Como arquitecta y desarrolladora full stack, busco potenciar ambas disciplinas que he desarrollado a lo largo de mi carrera. Desde la arquitectura, destaco mi capacidad para dialogar con clientes, levantar requerimientos y diseñar soluciones alineadas a sus necesidades, gestionando luego el trabajo colaborativo con los equipos técnicos para llevar los proyectos a cabo. Por otro lado, como desarrolladora, cuento con sólidos conocimientos en tecnologías actuales que me permiten aportar con soluciones innovadoras y eficientes. </p>
+                        <h3> Full Stack Developer</h3>
+                        <p className="fst-italic"> Architect transitioning into Full Stack Development, with six years of experience leading multidisciplinary teams, engaging with users, designing housing solutions, and coaching. Recognized for strong communication skills, customer service, innovation, and a goal-oriented mindset. Recently completed a Full Stack Development bootcamp in JavaScript and am eager to apply my problem-solving abilities and design-thinking approach to the IT industry. Looking for opportunities to grow and contribute as a developer.  </p>
                         <div className="row">
                             <div className="col-lg-6">
+                                <h3> EDUCATION </h3>
                                 <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Arquitecta</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Universidad:</strong> <span>Universidad de Chile</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Desafio Latam:</strong> <span> Desarrolladora Full Stack Js</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponibilidad</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>FULL STACK DEVELOPER JAVASCRPT:</strong> <span> Academia Desafio Latam - 2025</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong> ARCHITECT:</strong> <span>Universidad de Chile - 2020</span></li>
+                                </ul>
+                                <h3> LANGUAGES  </h3>
+                                <ul>
+                                <li><i className="bi bi-chevron-right"></i> <strong>ENGLISH:</strong> <span> fluent (11 years)</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong> SPANISH:</strong> <span>Native</span></li>
+                                </ul>
+                                <h3> INTERESTS / HOBBIES </h3>
+                                <ul>
+                                <li ><i className="bi bi-chevron-right"></i>🌱 Love learning about plants and gardening</li>
+                                <li><i className="bi bi-chevron-right"></i>💪 Enjoy going to the gym every morning</li>
+                                <li><i className="bi bi-chevron-right"></i>🎶 I like discovering fun activities in the city, such as concerts, restaurants, and expos</li>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -128,49 +147,44 @@ export const Home = () => {
 
                 <div className="section-title">
                 <h2>Tech stack </h2>
-                <p>Como desarrolladora full stack, estoy versada en una amplia gama de herramientas que abarcan tanto el desarrollo del front-end como del back-end, así como la gestión eficiente de proyectos y la colaboración en equipos de desarrollo. Aquí hay una descripción más detallada de las herramientas que manejo:</p>
+                <p>As a full-stack developer, I am well-versed in a wide range of tools covering both front-end and back-end development, as well as efficient project management and collaboration within development teams. Here is a more detailed description of the tools I use:</p>
 
-                <div className="row skills-content">
-
-                <div className="col-lg-6">
-
+                <div className=" imagenes-skills">
                     <div className="progress">
+                    <img   src = {htmlImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">HTML </span>
                     </div>
 
                     <div className="progress">
+                    <img  src = {cssImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">CSS</span>
                     </div>
 
                     <div className="progress">
+                    <img   src = {jsImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">JavaScript</span>
                     </div>
 
                     <div className="progress">
+                    <img  src = {reactImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">React JS</span>
                     </div>
 
                     <div className="progress">
+                    <img   src = {bootstrapImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">Bootstrap</span>
                     </div>
 
                     <div className="progress">
+                    <img  src = {nodeImg} style={{width:"70px", height:"50px"}} />
                     <span className="skill">Node.js</span>
                     </div>
 
                     <div className="progress">
+                    <img  src = {postgresImg} style={{width:"50px", height:"50px"}} />
                     <span className="skill">PostgreSQL</span>
                     </div>
-                    <div className="progress">
-                    <span className="skill">PostgreSQL</span>
-                    </div>
-                    <div className="progress">
-                    <span className="skill">PostgreSQL</span>
-                    </div>
-
                 </div>
-
-            </div>
 
             </div>
             </div>
@@ -184,8 +198,8 @@ export const Home = () => {
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-            <h2>Portafolio</h2>
-            <p> A continuación, te presento algunos de los portales web que he desarrollado a lo largo de mi carrera como desarrolladora full stack.</p>
+            <h2>Portfolio</h2>
+            <p> Here are some of the web portals developed throughout my career as a full-stack developer.</p>
             </div>
 
             <div id="proyectos" className="row">
@@ -202,14 +216,14 @@ export const Home = () => {
         <div id="contacto" className="contacto">
            
             <div className="section-title">
-                <h2>Contacto</h2>
+                <h2>Contact</h2>
             </div>
             <div className="col-lg-4">
             <div className="info">
                 <div className="email">
-                    <CiMail className= "icono"size={24} />
+                    <CiMail className= "icono"size={10} />
                     <div className="correo">
-                        <h4>Email:</h4>
+                        <h4>E-mail:</h4>
                         <p> javieravenegas.arch@gmail.com</p>
                     </div>
               </div>
@@ -217,19 +231,10 @@ export const Home = () => {
               <div className="phone">
                 <IoPhonePortraitOutline className= "icono"  />
                 <div className="telefono">
-                    <h4>Teléfono:</h4>
+                    <h4>Cell:</h4>
                     <p>+56 9 6675 3867</p>
                 </div>
               </div>
-              <div className="d-flex align-items-center ">
-              <CiLocationOn className= "icono" size={24}/>
-            
-                <div className="direccion">
-                    <h4>Direccion:</h4>
-                    <p>Eliodoro Yañez 1421, Providencia, Santiago</p>
-                </div>
-              </div>
-              
             </div>
           </div>
 
@@ -247,7 +252,7 @@ export const Home = () => {
     <footer id="footer">
         <div className="container">
         <h3>JAVIERA VENEGAS CASTILLO</h3>
-        <p>Recién titulada del Bootcamp de Desarrollo Full Stack JavaScript, en búsqueda de mi primera oportunidad laboral como desarrolladora.</p>
+        <p>Recently completed a Full Stack Development bootcamp in JavaScript and am eager to apply my problem-solving abilities and design-thinking approach to the IT industry. Looking for opportunities to grow and contribute as a developer.</p>
         
         <div className="social-links">   
             <a href="https://github.com/JaviVenegas" className="gitHub p-2"><FaGithub /></a>
