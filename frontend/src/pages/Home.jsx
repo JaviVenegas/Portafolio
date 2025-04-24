@@ -1,7 +1,7 @@
 
 
 
-import { Button, Container }  from 'react-bootstrap';
+import { Button, Container, Row, Col }  from 'react-bootstrap';
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import { GoPerson } from "react-icons/go";
 import { MdWebAsset } from "react-icons/md";
@@ -9,7 +9,6 @@ import { CiMail } from "react-icons/ci";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5"; 
-import { CiLocationOn } from "react-icons/ci";
 import profileImg from '/images/profile-img.png'; // Ruta relativa si está dentro de src
 import htmlImg from '/images/html.png';
 import cssImg from '/images/css.png';
@@ -20,8 +19,6 @@ import nodeImg from '/images/Node.png';
 import postgresImg from '/images/PostgreSQL.png';
 
 
-
-import proyectos from "../components/Proyectos";
 
 
 import React, { useEffect, useRef } from 'react';
@@ -95,17 +92,17 @@ export const Home = () => {
 
  {/* About Section */}
 
-        <Container id="about" className="about">
+        <div id="about" className="about">
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
                 <h2>Info</h2>
                 </div>
 
-                <div className= "row contenedor-info">
-                    <div className="col-lg-4 d-flex justify-content-center align-items-center">
-                        <img src= {profileImg} style={{width:"100%", height:"100%"}}  className="img-fluid" alt=""/> 
-                    </div>
-                    <div>
+                <Row className= "contenedor-info">
+                    <Col xs={12} lg={4} >
+                        <img src= {profileImg} style={{width:"100%"}}  className="img-fluid" alt=""/> 
+                    </Col>
+                    <Col xs={12} lg={8} >
                         <h3> Full Stack Developer</h3>
                         <p className="fst-italic"> Architect transitioning into Full Stack Development, with six years of experience leading multidisciplinary teams, engaging with users, designing housing solutions, and coaching. Recognized for strong communication skills, customer service, innovation, and a goal-oriented mindset. Recently completed a Full Stack Development bootcamp in JavaScript and am eager to apply my problem-solving abilities and design-thinking approach to the IT industry. Looking for opportunities to grow and contribute as a developer.  </p>
                         <div className="row">
@@ -129,10 +126,10 @@ export const Home = () => {
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
-        </Container>
+        </div>
         
 
 
@@ -151,38 +148,38 @@ export const Home = () => {
 
                 <div className=" imagenes-skills">
                     <div className="progress">
-                    <img   src = {htmlImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">HTML </span>
+                        <img   src = {htmlImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">HTML </span>
                     </div>
 
                     <div className="progress">
-                    <img  src = {cssImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">CSS</span>
+                        <img  src = {cssImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">CSS</span>
                     </div>
 
                     <div className="progress">
-                    <img   src = {jsImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">JavaScript</span>
+                        <img  src = {jsImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">JavaScript</span>
                     </div>
 
                     <div className="progress">
-                    <img  src = {reactImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">React JS</span>
+                        <img  src = {reactImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">React JS</span>
                     </div>
 
                     <div className="progress">
-                    <img   src = {bootstrapImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">Bootstrap</span>
+                        <img   src = {bootstrapImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">Bootstrap</span>
                     </div>
 
                     <div className="progress">
-                    <img  src = {nodeImg} style={{width:"70px", height:"50px"}} />
-                    <span className="skill">Node.js</span>
+                        <img  src = {nodeImg} style={{width:"70px", height:"50px"}} />
+                        <span className="skill">Node.js</span>
                     </div>
 
                     <div className="progress">
-                    <img  src = {postgresImg} style={{width:"50px", height:"50px"}} />
-                    <span className="skill">PostgreSQL</span>
+                        <img  src = {postgresImg} style={{width:"50px", height:"50px"}} />
+                        <span className="skill">PostgreSQL</span>
                     </div>
                 </div>
 
@@ -194,7 +191,7 @@ export const Home = () => {
 
 
  {/* Portafolio Section */}
-        <Container id="portfolio" className="portfolio section-bg">
+        <section id="portfolio" className="portfolio section-bg">
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
@@ -202,43 +199,45 @@ export const Home = () => {
             <p> Here are some of the web portals developed throughout my career as a full-stack developer.</p>
             </div>
 
-            <div id="proyectos" className="row">
+            <div id="proyectos" className=" proyectos row">
                 <Proyectos/>
 
                 </div>
 
         </div>
-        </Container>
+        </section>
 
 {/* End Portafolio Section */}
 
  {/* Services Contacto */}
-        <div id="contacto" className="contacto">
+        <section id="contacto" className="contacto">
            
             <div className="section-title">
                 <h2>Contact</h2>
             </div>
-            <div className="col-lg-4">
-            <div className="info">
-                <div className="email">
-                    <CiMail className= "icono"size={10} />
-                    <div className="correo">
-                        <h4>E-mail:</h4>
-                        <p> javieravenegas.arch@gmail.com</p>
+            <Row className = "justify-content-center">
+                <Col xs = {12} md={6} lg ={4}>    
+                    <div className="info">
+                        <div className="email d-flex align-items-center mb-3">
+                            <p className= "icono " size={20} > <CiMail /> </p> 
+                            <div className="correo">
+                                <h4>E-mail:</h4>
+                                <p> javieravenegas.arch@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="phone d-flex align-items-center">
+                            <p className= "icono " size={20} > <IoPhonePortraitOutline /> </p>
+                            <div className="telefono">
+                                <h4>Cell:</h4>
+                                <p>+56 9 6675 3867</p>
+                            </div>
+                        </div>
                     </div>
-              </div>
 
-              <div className="phone">
-                <IoPhonePortraitOutline className= "icono"  />
-                <div className="telefono">
-                    <h4>Cell:</h4>
-                    <p>+56 9 6675 3867</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+                    
+                </Col>
+            </Row>
+        </section>
  {/* End Services Contacto */}   
  
 
@@ -272,6 +271,3 @@ export const Home = () => {
     </>
 )
 }
-
-
-
