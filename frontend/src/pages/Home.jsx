@@ -79,9 +79,9 @@ export const Home = () => {
                 <a href="https://www.linkedin.com/in/javiera-venegas-castillo-37084612a/" className="linkedin"><FaLinkedinIn style={{fontSize:"45px"}} /></a>
 
             </div>
-            <div className=" descarga-cv my-5">
-                <a href= "/documents/CV_Javiera_Venegas_español.pdf" download="CV_JAVIERA_VENEGAS_CASTILLO.pdf" className="btn btn-primary pt-3"> <Button > Descargar curriculum</Button> </a>     
-                <a href= "/documents/CV_Javiera_Venegas_ingles.pdf" download="CV_JAVIERA_VENEGAS_CASTILLO.pdf" className="btn btn-primary pt-3"> <Button > Download resume </Button> </a>     
+            <div className=" descarga-cv">
+                <a href= "/documents/CV_Javiera_Venegas_español.pdf" download="CV_JAVIERA_VENEGAS_CASTILLO.pdf" className=" btn-primary py-5"> <Button > Descargar curriculum</Button> </a>     
+                <a href= "/documents/CV_Javiera_Venegas_ingles.pdf" download="CV_JAVIERA_VENEGAS_CASTILLO.pdf" className="btn-primary pt-3"> <Button > Download resume </Button> </a>     
             </div>
             
         </div>
@@ -99,25 +99,29 @@ export const Home = () => {
                 </div>
 
                 <Row className= "contenedor-info">
-                    <Col xs={12} lg={4} >
-                        <img src= {profileImg} style={{width:"100%"}}  className="img-fluid" alt=""/> 
+                    <Col sm={12} lg={6}  className= "box">
+                        <img src= {profileImg} style={{width:"100%"}} alt=""/> 
                     </Col>
-                    <Col xs={12} lg={8} >
-                        <h3> Full Stack Developer</h3>
+                    <Col className= "box" >
+                        <h3> Full Stack Developer/Architect</h3>
                         <p className="fst-italic"> Architect transitioning into Full Stack Development, with six years of experience leading multidisciplinary teams, engaging with users, designing housing solutions, and coaching. Recognized for strong communication skills, customer service, innovation, and a goal-oriented mindset. Recently completed a Full Stack Development bootcamp in JavaScript and am eager to apply my problem-solving abilities and design-thinking approach to the IT industry. Looking for opportunities to grow and contribute as a developer.  </p>
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <h3> EDUCATION </h3>
+                        <div>
+                            <div >
+                                <h3> Education</h3>
                                 <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>FULL STACK DEVELOPER JAVASCRPT:</strong> <span> Academia Desafio Latam - 2025</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong> ARCHITECT:</strong> <span>Universidad de Chile - 2020</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Full Stack Developer JavaScript:</strong> <span> Academia Desafio Latam - 2025</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong> Architect:</strong> <span>Universidad de Chile - 2020</span></li>
                                 </ul>
-                                <h3> LANGUAGES  </h3>
+                                <h3> Courses</h3>
                                 <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>ENGLISH:</strong> <span> fluent (11 years)</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong> SPANISH:</strong> <span>Native</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong> The Project Management Course:</strong> <span> udemy</span></li>
                                 </ul>
-                                <h3> INTERESTS / HOBBIES </h3>
+                                <h3> Langueges   </h3>
+                                <ul>
+                                <li><i className="bi bi-chevron-right"></i> <strong>English:</strong> <span> fluent (11 years)</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong> Spanish:</strong> <span>Native</span></li>
+                                </ul>
+                                <h3> Interests / Hobbies </h3>
                                 <ul>
                                 <li ><i className="bi bi-chevron-right"></i>🌱 Love learning about plants and gardening</li>
                                 <li><i className="bi bi-chevron-right"></i>💪 Enjoy going to the gym every morning</li>
@@ -254,6 +258,8 @@ export const Home = () => {
         <p>Recently completed a Full Stack Development bootcamp in JavaScript and am eager to apply my problem-solving abilities and design-thinking approach to the IT industry. Looking for opportunities to grow and contribute as a developer.</p>
         
         <div className="social-links">   
+            <a href="https://github.com/JaviVenegas" className="gitHub p-2"><CiMail /> </a>
+            <a href="https://github.com/JaviVenegas" className="gitHub p-2"><IoPhonePortraitOutline /></a>
             <a href="https://github.com/JaviVenegas" className="gitHub p-2"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/javiera-venegas-castillo-37084612a/" className="linkedin"><FaLinkedinIn /></a>
         </div>
